@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D5EB45E9-6589-470E-8189-922256A163AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ElectronicsStore</RootNamespace>
+    <AssemblyName>ElectronicsStore</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormA.Designer.cs">
+      <DependentUpon>FormA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormG.Designer.cs">
+      <DependentUpon>FormG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormL.Designer.cs">
+      <DependentUpon>FormL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormM.Designer.cs">
+      <DependentUpon>FormM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderA.Designer.cs">
+      <DependentUpon>OrderA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person.cs" />
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormA.resx">
+      <DependentUpon>FormA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormG.resx">
+      <DependentUpon>FormG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormL.resx">
+      <DependentUpon>FormL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormM.resx">
+      <DependentUpon>FormM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderA.resx">
+      <DependentUpon>OrderA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\before.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a321.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a52s.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redmi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inspiron.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\macbook.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a322.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redmi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a52s1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ll.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ll1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bb.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BC.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BBC.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\commerce-push-ecommerce-store-cart-supermarket.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
